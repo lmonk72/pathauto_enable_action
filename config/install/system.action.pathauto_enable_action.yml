@@ -1,0 +1,14 @@
+id: pathauto_enable_action
+label: 'Enable automatic URL alias'
+status: true
+langcode: en
+type: node
+plugin: pathauto_enable_action
+dependencies:
+  enforced:
+    module:
+      - node
+  module:
+    - pathauto_enable_action
+    - pathauto
+configuration: {}

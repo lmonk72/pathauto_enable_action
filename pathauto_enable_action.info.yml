@@ -1,0 +1,7 @@
+name: 'Pathauto enable action'
+type: module
+description: 'Provides a content action to enable the "Generate automatic URL alias" checkbox for selected nodes so Pathauto will (re)generate aliases.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - pathauto
