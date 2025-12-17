@@ -4,4 +4,6 @@ description: 'Provides a content action to enable the "Generate automatic URL al
 core_version_requirement: ^10
 package: Custom
 dependencies:
-  - pathauto
+  - drupal:path_alias
+  - pathauto:pathauto
+  - token:token

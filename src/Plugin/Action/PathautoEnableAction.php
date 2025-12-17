@@ -30,11 +30,12 @@ class PathautoEnableAction extends ActionBase implements ActionInterface
     // Simple execute logic
     public function execute($entity = NULL)
     {
-        if ($entity && method_exists($entity, 'path') && isset($entity->path)) {
-            $entity->path->pathauto = PathautoState::CREATE;
+        if ($entity && $entity->hasField('path') && !$entity->get('path')->isEmpty()) {
+            $entity->get('path')->pathauto = PathautoState::CREATE;
             $entity->save();
         }
     }
+
 
     // Straightforward access using administer nodes permission
     public function access($object, ?AccountInterface $account = NULL, $return_as_object = FALSE)
