@@ -1,0 +1,65 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# PHP / Composer
+vendor/
+composer.phar
+.phpunit.result.cache
+phpunit.xml
+phpunit.xml.dist
+
+# Drupal: ignore files directories and local settings
+sites/*/files/
+sites/*/private/
+sites/*/settings*.php
+sites/*/services*.yml
+sites/simpletest/
+sites/*/files/.htaccess
+
+# Local config overrides
+config/*.local.yml
+config/sync/local.settings.php
+
+# Tests, coverage, and build artifacts
+coverage/
+build/
+reports/
+test-results.xml
+phpcs.xml.cache
+phpcs.cache
+
+# Logs and temp
+*.log
+*.cache
+tmp/
+.cache/
+
+# Archives
+*.zip
+*.tar.gz
+*.tgz
+
+# Editor backup files
+*~
+*.swp
+
+# Standard-version / release helper
+CHANGELOG.tmp
+release/
+
+# Environment files
+.env
+.env.*
+
