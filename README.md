@@ -46,6 +46,14 @@ This simple Drupal 10 module provides an Action plugin that enables the Pathauto
   - Ensure the module is enabled: `drush pml --status=enabled | grep pathauto_enable_action`
   - Clear caches: `drush cache:rebuild`
   - Confirm you have "Administer nodes" permission.
-  
+
 - **Permission denied error:**
   - The action requires the "Administer nodes" permission. Assign this role to your user if needed.
+
+## Testing
+To run the module tests using DDEV and PHPUnit, run:
+```bash
+ddev exec env SIMPLETEST_DB="mysql://db:db@db/db" \
+   vendor/bin/phpunit -c /var/www/html/web/core/phpunit.xml.dist \
+   /var/www/html/web/modules/custom/pathauto_enable_action/tests
+```

@@ -1,0 +1,28 @@
+{
+  "name": "pathauto_enable_action",
+  "version": "1.0.1",
+  "description": "Pathauto Enable Action ======================",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "release": "standard-version",
+    "release:dry": "standard-version --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmonk72/pathauto_enable_action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lmonk72/pathauto_enable_action/issues"
+  },
+  "homepage": "https://github.com/lmonk72/pathauto_enable_action#readme",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}

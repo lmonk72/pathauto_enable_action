@@ -1,0 +1,32 @@
+{
+    "name": "lawrencemonk/pathauto-enable-action",
+    "description": "A simple module to allow Pathauto to be enabled via content actions so URL aliases can be regenerated.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require-dev": {
+        "drupal/coder": "^8.3",
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf",
+        "test": "phpunit"
+    },
+    "authors": [
+        {
+            "name": "Lawrence Monk"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
+    }
+}
